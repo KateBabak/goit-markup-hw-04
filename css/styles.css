@@ -14,6 +14,7 @@
             --transparent-white-color: rgba(255, 255, 255, 0.6);
             --hover-background-color: #188CE8;
             --header-border-color:#ECECEC;
+            --logo-background-color:#C4C4C4;
             
         }
     
@@ -124,6 +125,7 @@
             display: flex;
             align-items: center;
             margin-left: auto;
+            
         }
         
 
@@ -185,14 +187,46 @@ font-family: var(--logo-font);
                     color: var(--color-blue);
                 }
 
-         
+        .svg-icon-wrapper {
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 30px;
+            background-color: var(--another-grey-color);
+            border-radius: 4px;
+
+    }
+
+        .social-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        
+      
+                .client-list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 30px;
+                }
+
+                .client-list-item {
+                    max-width: 170px;
+                    max-height: 92px;
+                    
+                }
+
+        
                     /* Studio contect */
 
         .hero-section {
-        background-color: var(--background-color-dark);
         padding-top:200px;
         padding-bottom: 200px;
-        
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../images/headerphoto.jpg);
+        background-size: cover;
+        background-color:var(--logo-background-color);
             }
 
 
@@ -274,7 +308,7 @@ font-family: var(--logo-font);
                 }
 
             .employees-section {
-            background-color: #F5F4FA;
+            background-color: var(--another-grey-color);
             padding: 94px 0;
                         }
 
