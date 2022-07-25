@@ -15,6 +15,7 @@
             --hover-background-color: #188CE8;
             --header-border-color:#ECECEC;
             --logo-background-color:#C4C4C4;
+            --svg-fill-color: #AFB1B8;
             
         }
     
@@ -217,13 +218,22 @@ font-family: var(--logo-font);
         .social-list-link:hover,
         .social-list-link:focus {
 
-            background-color: var(--color-blue);
-            
+            background-color: var(--color-blue);  
         }
-
+        
+        
       .social-list-icon {
-        fill: #AFB1B8;
+        fill: var(--svg-fill-color);
+        width: 20px;
+        height: 20px;
       }
+
+          .social-list-link:hover .social-list-icon ,
+          .social-list-link:focus .social-list-icon {
+    
+              fill: var(--primary-text-color-theme-dark);
+    
+          }
                 .client-list {
                     display: flex;
                     justify-content: center;
@@ -232,9 +242,21 @@ font-family: var(--logo-font);
                 }
 
                 .client-list-item {
-                    max-width: 170px;
-                    max-height: 92px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 170px;
+                    height: 92px;
+                    border: 1px solid var(--svg-fill-color);
+                    border-radius: 4px;
+    
                     
+                }
+ 
+                .client-list-icon {
+                fill: var(--svg-fill-color);
+ 
+                
                 }
 
         
@@ -381,6 +403,12 @@ font-family: var(--logo-font);
      padding: 60px 0;
  }
 
+
+ .footer-list>.container {
+     display: flex;
+     gap: 70px;
+ }
+
   .footer-logo {
     color: var(--primary-text-color-theme-dark);
     margin-bottom: 20px;
@@ -407,15 +435,24 @@ font-family: var(--logo-font);
     color: rgba(255, 255, 255, 0.6);
  }
 
+
  .footer-title {
-    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+        
  }
 
 .footer-content-wrapper {
     color: var(--primary-text-color-theme-dark);
 }
 
-
+    .footer-social {
+        text-align: left;
+    }
 
 /* Portfolio second page */
 /* Buttons */
