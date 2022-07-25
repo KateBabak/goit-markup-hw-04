@@ -255,9 +255,12 @@ font-family: var(--logo-font);
  
                 .client-list-icon {
                 fill: var(--svg-fill-color);
- 
-                
                 }
+
+                .client-list-icon:hover,
+                .client-list-icon:focus {
+                fill: var(--color-blue);
+                 }
 
         
                     /* Studio contect */
@@ -450,9 +453,21 @@ font-family: var(--logo-font);
     color: var(--primary-text-color-theme-dark);
 }
 
-    .footer-social {
-        text-align: left;
-    }
+        .footer-social .social-list-link {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+            .footer-social .social-list-icon {
+            fill: var(--primary-text-color-theme-dark);
+                    
+            }
+
+            .footer-social .social-list-link:hover,
+            .footer-social .social-list-link:focus
+             {background-color: var(--color-blue);
+
+            }
+
 
 /* Portfolio second page */
 /* Buttons */
