@@ -155,10 +155,6 @@ font-family: var(--logo-font);
     letter-spacing: 0.03em;
     margin-right: 90px;
 }
-/* .logo::before {
-  content: "";  
-
-} */
 
 .menu-item:not(:last-child) {
     margin-right: 50px;
@@ -168,6 +164,7 @@ font-family: var(--logo-font);
     margin-right: 50px;
     
 }
+
 
 
     .text-blue {
@@ -186,7 +183,20 @@ font-family: var(--logo-font);
         .menu-link.contact-link {
             color: var(--secondary-text-color-theme-light);
             display: flex;
+            justify-content: center;
+            align-items: center;
             }
+
+         .contact-link-icon {
+         margin-right: 10px;
+        fill: var(--secondary-text-color-theme-light);
+            
+        }
+
+            .contact-link:hover .contact-link-icon,
+            .contact-link:focus .contact-link-icon {
+              fill: var(--color-blue);
+                }
 
         .menu-link:hover,
         .menu-link:focus {
