@@ -189,14 +189,10 @@ font-family: var(--logo-font);
 
          .contact-link-icon {
          margin-right: 10px;
-        fill: var(--secondary-text-color-theme-light);
+        fill: currentColor;
             
         }
 
-            .contact-link:hover .contact-link-icon,
-            .contact-link:focus .contact-link-icon {
-              fill: var(--color-blue);
-                }
 
         .menu-link:hover,
         .menu-link:focus {
@@ -215,7 +211,6 @@ font-family: var(--logo-font);
         .social-list {
             display: flex;
             justify-content: center;
-            align-items: center;
             gap: 10px;
         }
 
@@ -226,7 +221,7 @@ font-family: var(--logo-font);
             width: 44px;
             height: 44px;
             border-radius: 50%;
-            background-color: var(--primary-text-color-theme-dark);
+            color: var(--svg-fill-color);
             
         }
         
@@ -234,21 +229,16 @@ font-family: var(--logo-font);
         .social-list-link:focus {
 
             background-color: var(--color-blue);  
+            color: var(--primary-text-color-theme-dark);
         }
         
         
       .social-list-icon {
-        fill: var(--svg-fill-color);
+        fill: currentColor;
         width: 20px;
         height: 20px;
       }
 
-          .social-list-link:hover .social-list-icon ,
-          .social-list-link:focus .social-list-icon {
-    
-              fill: var(--primary-text-color-theme-dark);
-    
-          }
                 .client-list {
                     display: flex;
                     justify-content: center;
@@ -256,7 +246,7 @@ font-family: var(--logo-font);
                     gap: 30px;
                 }
 
-                .client-list-item {
+                .client-list-link {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -264,18 +254,17 @@ font-family: var(--logo-font);
                     height: 92px;
                     border: 1px solid var(--svg-fill-color);
                     border-radius: 4px;
-                    cursor: pointer;
-    
-                    
+                    fill:currentColor;
+                    color: var(--svg-fill-color);
+      
                 }
  
-                .client-list-icon {
-                fill: var(--svg-fill-color);
-                }
 
-                .client-list-icon:hover,
-                .client-list-icon:focus {
-                fill: var(--color-blue);
+                .client-list-link:hover,
+                .client-list-link:focus {
+                color: var(--color-blue);
+                border-color: var(--color-blue);
+
                  }
 
         
@@ -288,6 +277,10 @@ font-family: var(--logo-font);
         url(../images/headerphoto.jpg);
         background-size: cover;
         background-color:var(--logo-background-color);
+        background-repeat: no-repeat;
+        background-position: center;
+        max-width: 1600px;
+        height: 600px;
             }
 
 
@@ -413,6 +406,7 @@ font-family: var(--logo-font);
         font-size: 16px;
         line-height: 1.19;
         letter-spacing: 0.03em;
+        margin-bottom: 16px;
         }
 
 
@@ -426,6 +420,7 @@ font-family: var(--logo-font);
  .footer-list>.container {
      display: flex;
      gap: 70px;
+     align-items: baseline;
  }
 
   .footer-logo {
@@ -462,12 +457,11 @@ font-family: var(--logo-font);
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
+    color: var(--primary-text-color-theme-dark);
         
  }
 
-.footer-content-wrapper {
-    color: var(--primary-text-color-theme-dark);
-}
+
 
         .footer-social .social-list-link {
             background-color: rgba(255, 255, 255, 0.1);
@@ -520,14 +514,21 @@ font-family: var(--logo-font);
     
 }
 
-.portfolio-item {
-    background: var(--primary-text-color-theme-dark);
-    border: 1px solid var(--light-grey-color);
+
+.portfolio-item-link {
+    display: block;
 }
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .portfolio-item .employees-card-content-wrapper {
     text-align: left;
     padding: 20px 24px;
+    border: 1px solid var(--light-grey-color);
 }
 
 .portfolio-item-title {
