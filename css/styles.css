@@ -244,7 +244,10 @@ font-family: var(--logo-font);
                     justify-content: center;
                     align-items: center;
                     gap: 30px;
+                 
                 }
+
+    
 
                 .client-list-link {
                     display: flex;
@@ -254,7 +257,7 @@ font-family: var(--logo-font);
                     height: 92px;
                     border: 1px solid var(--svg-fill-color);
                     border-radius: 4px;
-                    fill:currentColor;
+                    fill: currentColor;
                     color: var(--svg-fill-color);
       
                 }
@@ -281,6 +284,7 @@ font-family: var(--logo-font);
         background-position: center;
         max-width: 1600px;
         height: 600px;
+        margin: 0 auto;
             }
 
 
